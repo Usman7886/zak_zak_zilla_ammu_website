@@ -239,9 +239,9 @@
     
     .memory-image-container {
       background: rgba(0,0,0,0.4);
-      border-radius: 20px;
-      padding: 20px;
-      margin: 20px 0;
+      border-radius: 15px;
+      padding: 15px;
+      margin: 15px 0;
       box-shadow: 0 8px 25px rgba(0,0,0,0.5), 0 0 20px rgba(255,105,180,0.2);
       border: 1px solid rgba(0,0,0,0.8);
       border-top: 1px solid rgba(255,105,180,0.3);
@@ -250,9 +250,9 @@
     
     .memory-image {
       width: 100%;
-      max-width: 300px;
+      max-width: 250px;
       height: auto;
-      border-radius: 15px;
+      border-radius: 12px;
       box-shadow: 0 5px 15px rgba(255,105,180,0.3);
       transition: transform 0.3s ease;
     }
@@ -262,9 +262,9 @@
     }
     
     .image-caption {
-      margin-top: 15px;
+      margin-top: 12px;
       font-family: 'Dancing Script', cursive;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #ffb6c1;
       text-align: center;
     }
@@ -364,20 +364,46 @@
       }
       
       /* Mobile styles for Step 4 image */
-      #step4 .memory-image-container {
-        padding: 15px !important;
-        margin: 15px 0 !important;
-        border-radius: 15px !important;
+      #step4 {
+        padding: 20px !important;
+        max-height: 90vh;
+        overflow-y: auto;
       }
       
-      #step4 .memory-image {
-        max-width: 250px !important;
+      #step4 .memory-image-container {
+        padding: 10px !important;
+        margin: 10px 0 !important;
         border-radius: 10px !important;
       }
       
+      #step4 .memory-image {
+        max-width: 200px !important;
+        border-radius: 8px !important;
+      }
+      
       #step4 .image-caption {
+        font-size: 0.875rem !important;
+        margin-top: 8px !important;
+      }
+      
+      #step4 h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 15px !important;
+      }
+      
+      #step4 .special-message {
         font-size: 1rem !important;
-        margin-top: 10px !important;
+        margin-bottom: 15px !important;
+      }
+      
+      #step4 .quote-card {
+        padding: 12px !important;
+        margin: 8px !important;
+      }
+      
+      #step4 .blessing-text {
+        font-size: 1rem !important;
+        margin-top: 15px !important;
       }
     }
   </style>
@@ -488,9 +514,9 @@
         <h2 class="text-4xl font-bold mb-8 text-gradient">Our Precious Memories</h2>
         <div class="special-message mb-6 rotating-quote"></div>
         
-        <div class="memory-image-container mb-6">
-          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=center" 
-               alt="Beautiful memories with my darling Ammu" 
+        <div class="memory-image-container mb-4">
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop&crop=center" 
+               alt="Beautiful anime doctor with cherry blossoms - my darling Ammu" 
                class="memory-image">
           <div class="image-caption">
             My beautiful Ammu, my darling, my everything 💕
